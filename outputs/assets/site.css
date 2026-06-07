@@ -273,7 +273,7 @@ p {
   padding: 4.75rem 0 3rem;
   background:
     linear-gradient(180deg, rgba(5, 5, 5, 0.44) 0%, rgba(5, 5, 5, 0.76) 54%, rgba(5, 5, 5, 0.98) 100%),
-    var(--hero-image, url("drinks-friends.jpg")) center / cover no-repeat;
+    var(--hero-image, url("drinks-friends.jpg")) var(--hero-position, center) / cover no-repeat;
   isolation: isolate;
 }
 
@@ -286,7 +286,8 @@ p {
 }
 
 .hero-owners {
-  --hero-image: url("owners-one.jpg");
+  --hero-image: url("owner-hero.jpg");
+  --hero-position: center 45%;
 }
 
 .hero-merch {
@@ -302,7 +303,8 @@ p {
 }
 
 .hero-contact {
-  --hero-image: url("patio.jpg");
+  --hero-image: url("patio-hero.jpg");
+  --hero-position: center 56%;
 }
 
 .hero.compact {
